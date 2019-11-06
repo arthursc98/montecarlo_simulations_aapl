@@ -46,7 +46,7 @@ for i in range(num_trials):
 dates=pd.date_range(end,dt.datetime(2019,11,2)).tolist()
 simulations.index=dates
 plt.figure(figsize=(16,8))
-plt.title('Forecasting AAPL Prices with Monte Carlo Simulations')
+plt.title('Forecasting AAPL Closed Prices with Monte Carlo Simulations')
 plt.ylabel('Price')
 plt.plot(prices)
 plt.plot(simulations,linestyle='--')
@@ -55,7 +55,7 @@ plt.show()
 
 # Zoomed plot
 plt.figure(figsize=(16,8))
-plt.title('Zoomed Forecasting AAPL Prices with Monte Carlos Simulation')
+plt.title('Zoomed Forecasting AAPL Closed Prices with Monte Carlo Simulation')
 plt.ylabel('Price')
 plt.plot(simulations)
 plt.savefig('Zoomed Forecasted.png')
